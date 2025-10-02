@@ -1,0 +1,23 @@
+.main_container {
+  background-color: #fecd55;
+  padding: 50px;
+}
+
+.container_fluid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  border: none;
+}
+
+.heading {
+  font-weight: bold;
+  font-size: 38px;
+  color: white;
+}
+.pattern {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
