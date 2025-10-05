@@ -9,11 +9,19 @@ export default function Project() {
       <br></br>
       <div className={Styles.container_fluid}>
         <ProjectCard
-          image="Lrc.png"
-          title="Library Management"
-          description="Library website, the user can see his details and the admin has access to the user's data and can make changes to them accordingly."
-          liveLink=""
-          githubLink=""
+          image="pix.png"
+          title="Pix & Clips"
+          description="Get view of stock photos and videos shared by talented creators."
+          liveLink="https://BharatAggarwal21.github.io/pix-clips"
+          githubLink="https://github.com/BharatAggarwal21/pix-clips"
+        />
+
+        <ProjectCard
+          image={"covid.png"}
+          title="Covid-19 Dashboard"
+          description="Covid-19 cases across the world with specific charts for country-wise data."
+          liveLink="https://BharatAggarwal21.github.io/covid-dashboard"
+          githubLink="https://github.com/BharatAggarwal21/covid-dashboard"
         />
 
         <ProjectCard
@@ -39,14 +47,6 @@ export default function Project() {
           title="Milap Clone"
           description="Crowdfunding platform related to healthcare, education,
                   sports, disaster relief, and other personal causes"
-          liveLink=""
-          githubLink=""
-        />
-
-        <ProjectCard
-          image={"covid.png"}
-          title="Covid-19 Tracker"
-          description="Website to display current covid-19 cases across the world including total confirmed, active cases, recovered cases, and death toll."
           liveLink=""
           githubLink=""
         />
