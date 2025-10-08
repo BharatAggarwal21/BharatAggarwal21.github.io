@@ -5,6 +5,7 @@ export default function ProjectCard({
   image,
   title,
   description,
+  techStack,
   liveLink,
   githubLink,
 }) {
@@ -17,12 +18,16 @@ export default function ProjectCard({
         <h5 className="card-title">{title}</h5>
         <p className="card-text">{description}</p>
         <div className="mt-auto">
-          <a href={liveLink} className="btn btn-success btn-block ">
-            Live
-          </a>
-          <a href={githubLink} className="btn btn-outline-dark btn-block ">
-            Github link
-          </a>
+          {liveLink && (
+            <a href={liveLink} className="btn btn-success btn-block ">
+              Live
+            </a>
+          )}
+          {githubLink && (
+            <a href={githubLink} className="btn btn-outline-dark btn-block ">
+              Github link
+            </a>
+          )}
         </div>
       </div>
     </div>

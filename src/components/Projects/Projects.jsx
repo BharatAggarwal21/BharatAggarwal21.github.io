@@ -9,13 +9,19 @@ export default function Project() {
       <br></br>
       <div className={Styles.container_fluid}>
         <ProjectCard
+          image="todo1.png"
+          title="To-Do App"
+          description="Organize, track, and complete your tasks effortlessly."
+          liveLink="https://bharataggarwal21.github.io/ToDoApp/"
+          githubLink="https://github.com/BharatAggarwal21/ToDoApp"
+        />
+        <ProjectCard
           image="pix.png"
           title="Pix & Clips"
           description="Get view of stock photos and videos shared by talented creators."
           liveLink="https://BharatAggarwal21.github.io/pix-clips"
           githubLink="https://github.com/BharatAggarwal21/pix-clips"
         />
-
         <ProjectCard
           image={"covid.png"}
           title="Covid-19 Dashboard"
@@ -23,40 +29,12 @@ export default function Project() {
           liveLink="https://BharatAggarwal21.github.io/covid-dashboard"
           githubLink="https://github.com/BharatAggarwal21/covid-dashboard"
         />
-
         <ProjectCard
-          image="Shopping.png"
-          title="Shopping Cart"
-          description=" This website is a one-stop-shop for all your fashion and
-                  lifestyle needs, build using React & Express-js"
+          image="gdp.jpg"
+          title="GDP Analysis"
+          description="Machine Learning analysis to predict GDP of various countries."
           liveLink=""
-          githubLink=""
-        />
-
-        <ProjectCard
-          image="SpecialIssue.png"
-          title="VentureBeat Clone"
-          description="A leading source for transformative tech news and events that
-                  provide the deep context to make smart decisions."
-          liveLink=""
-          githubLink=""
-        />
-
-        <ProjectCard
-          image="milap.png"
-          title="Milap Clone"
-          description="Crowdfunding platform related to healthcare, education,
-                  sports, disaster relief, and other personal causes"
-          liveLink=""
-          githubLink=""
-        />
-
-        <ProjectCard
-          image="todo.png"
-          title="Todiost Clone"
-          description="Todoist an app that helps millions of people organize work and life now has grown from a personal side project to a market-leading Swiss Army Knife of life organization."
-          liveLink=""
-          githubLink=""
+          githubLink="https://github.com/BharatAggarwal21/GDP-Analysis"
         />
       </div>
     </div>
