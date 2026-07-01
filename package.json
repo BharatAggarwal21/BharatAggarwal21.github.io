@@ -20,13 +20,17 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
+    "lint": "eslint src --ext .js,.jsx",
+    "lint:fix": "eslint src --ext .js,.jsx --fix",
+    "format": "prettier --write \"src/**/*.{js,jsx,css,json}\"",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
       "react-app",
-      "react-app/jest"
+      "react-app/jest",
+      "prettier"
     ]
   },
   "browserslist": {
@@ -42,6 +46,8 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^6.3.0"
+    "eslint-config-prettier": "^10.1.8",
+    "gh-pages": "^6.3.0",
+    "prettier": "^3.9.4"
   }
 }

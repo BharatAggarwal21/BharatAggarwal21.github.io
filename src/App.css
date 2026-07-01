@@ -1,9 +1,9 @@
 .App {
   text-align: center;
 }
-.pattern_down{
+.pattern_down {
   position: absolute;
-  top:10;
+  top: 10;
   left: 0;
   width: 100%;
   z-index: -2;

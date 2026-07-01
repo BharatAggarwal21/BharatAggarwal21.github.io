@@ -3,6 +3,7 @@ import "./App.css";
 import HomePage from "./components/HomePage/HomePage";
 import Proficiencies from "./components/Proficiencies/Proficiencies";
 import Projects from "./components/Projects/Projects";
+import Experience from "./components/Experience/Experience";
 import { BrowserRouter } from "react-router-dom";
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
         <HomePage />
         <hr></hr>
         <Proficiencies />
+        <Experience />
         <Projects />
       </div>
     </BrowserRouter>

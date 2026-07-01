@@ -19,12 +19,22 @@ export default function ProjectCard({
         <p className="card-text">{description}</p>
         <div className="mt-auto">
           {liveLink && (
-            <a href={liveLink} className="btn btn-success btn-block ">
+            <a
+              href={liveLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn btn-success btn-block "
+            >
               Live
             </a>
           )}
           {githubLink && (
-            <a href={githubLink} className="btn btn-outline-dark btn-block ">
+            <a
+              href={githubLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn btn-outline-dark btn-block "
+            >
               Github link
             </a>
           )}

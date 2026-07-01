@@ -35,7 +35,8 @@ export default function HomePage() {
         <div>
           <Link
             to={{
-              pathname: "https://www.linkedin.com/in/bharat-a-971160167/",
+              pathname:
+                "https://www.linkedin.com/in/bharat-aggarwal-971160167/",
             }}
             target="_blank"
           >
