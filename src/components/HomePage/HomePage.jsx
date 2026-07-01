@@ -90,7 +90,7 @@ export default function HomePage() {
           <Link
             to={{
               pathname:
-                "https://drive.google.com/file/d/1iUa4t9h-OOhIrdJsIYSjKPhHD5H4nRqJ/view?usp=drive_link",
+                "https://drive.google.com/file/d/1GT1WfZrnXHN6ycmXxKFtBo4U7K6v30c9/view?usp=sharing",
             }}
             target="_blank"
             rel="noopener noreferrer"

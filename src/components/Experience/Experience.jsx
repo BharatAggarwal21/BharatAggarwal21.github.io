@@ -22,7 +22,7 @@ const experiences = [
     ],
     points: [
       <>
-        <strong>Logs Streaming feature</strong>: Lead the UI development from{" "}
+        <strong>Logs Streaming feature</strong>: Led the UI development from{" "}
         <strong>scratch</strong> and contributed to backend{" "}
         <strong>REST APIs</strong> to forward logs from Netskope Engine to
         user's cloud destinations, ensuring almost real-time log delivery which
