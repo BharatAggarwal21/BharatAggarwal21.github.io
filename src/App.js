@@ -14,6 +14,7 @@ function App() {
         <HomePage />
         <hr></hr>
         <Proficiencies />
+        <hr></hr>
         <Skills />
         <Experience />
         <Projects />

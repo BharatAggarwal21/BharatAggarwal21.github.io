@@ -8,10 +8,10 @@ const skills = [
   { icon: "Angular.png", label: "Angular" },
   { icon: "html-5.svg", label: "HTML" },
   { icon: "css.svg", label: "CSS" },
-  { icon: "Java.png", label: "Java" },
+  { icon: "java.png", label: "Java" },
   { icon: "node.png", label: "Node.js" },
   { icon: "mongo.png", label: "MongoDB" },
-  { icon: "Microservices.png", label: "Microservice/Monotlithic" },
+  { icon: "microservices.png", label: "Microservice/Monotlithic" },
   { icon: "ux.webp", label: "UI/UX" },
   { icon: "jest.png", label: "Jest" },
 ];
