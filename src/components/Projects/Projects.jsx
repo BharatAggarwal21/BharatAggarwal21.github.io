@@ -10,31 +10,49 @@ export default function Project() {
       <div className={Styles.container_fluid}>
         <ProjectCard
           image="todo1.png"
-          title="To-Do App"
-          description="Organize, track, and complete your tasks effortlessly."
+          title="Task Manager (MERN)"
+          description="A full-stack to-do app with JWT authentication to organize, track, and complete your daily tasks."
+          techStack={[
+            "React",
+            "Node.js",
+            "Express",
+            "MongoDB",
+            "Tailwind CSS",
+            "JWT",
+          ]}
           liveLink="https://bharataggarwal21.github.io/ToDoApp/"
           githubLink="https://github.com/BharatAggarwal21/ToDoApp"
         />
         <ProjectCard
+          image="admin-dashboard.png"
+          title="E-Commerce Admin Dashboard"
+          description="Admin-only dashboard for managing products, orders, and customers, with real-time sales analytics."
+          techStack={[
+            "React",
+            "Node.js",
+            "Express",
+            "MongoDB",
+            "Tailwind CSS",
+            "JWT",
+          ]}
+          liveLink="https://bharataggarwal21.github.io/ecommerce-admin-dashboard"
+          githubLink="https://github.com/BharatAggarwal21/ecommerce-admin-dashboard"
+        />
+        <ProjectCard
           image="pix.png"
           title="Pix & Clips"
-          description="Get view of stock photos and videos shared by talented creators."
+          description="A media discovery platform to browse and explore stock photos and videos from creators worldwide."
+          techStack={["React", "Axios", "Public API", "HTML", "CSS"]}
           liveLink="https://BharatAggarwal21.github.io/pix-clips"
           githubLink="https://github.com/BharatAggarwal21/pix-clips"
         />
         <ProjectCard
           image={"covid.png"}
-          title="Covid-19 Dashboard"
-          description="Covid-19 cases across the world with specific charts for country-wise data."
+          title="COVID-19 Live Tracker"
+          description="A real-time analytics dashboard visualizing global COVID-19 case data with country-specific charts."
+          techStack={["React", "Chart.js", "Public API", "HTML", "CSS"]}
           liveLink="https://BharatAggarwal21.github.io/covid-dashboard"
           githubLink="https://github.com/BharatAggarwal21/covid-dashboard"
-        />
-        <ProjectCard
-          image="gdp.jpg"
-          title="GDP Analysis"
-          description="Machine Learning analysis to predict GDP of various countries."
-          liveLink=""
-          githubLink="https://github.com/BharatAggarwal21/GDP-Analysis"
         />
       </div>
     </div>
