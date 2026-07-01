@@ -24,7 +24,7 @@ export default function Proficiencies() {
 
         <div className="col-sm-12 col-md-5 col-lg-2">
           <img src="database.svg" alt="img"></img>
-          <div>Data Structures & Algorithms</div>
+          <div>Database (Familiar)</div>
         </div>
       </div>
     </div>

@@ -81,9 +81,10 @@ export default function HomePage() {
         </div>
 
         <div className={`mb-5 px-5 ${Styles.details}`}>
-          Software engineer with ~6 years of professional experience in
-          developing Web applications. Adept at developing user-friendly design
-          to meet customer requirements and increase company revenue.
+          Software Engineer with ~6 years of experience building scalable web
+          applications using React, JavaScript, Node.js, Express, Java.
+          Passionate about developing clean, performant, and user-centric
+          software solutions.
           <br />
           <br />
           <Link
@@ -99,7 +100,7 @@ export default function HomePage() {
           </Link>
         </div>
 
-        <div className={`container ${Styles.skills}`}>
+        {/* <div className={`container ${Styles.skills}`}>
           <img src="react.svg" className="mx-2 mx-lg-5 my-3" alt="logo"></img>
           <img src="js.svg" className=" mx-2 mx-lg-5 my-3" alt="logo"></img>
           <img src="html-5.svg" className=" mx-2 mx-lg-5 my-3" alt="logo"></img>
@@ -123,7 +124,7 @@ export default function HomePage() {
 
         <br></br>
         <br></br>
-        <br></br>
+        <br></br> */}
       </div>
     </div>
   );

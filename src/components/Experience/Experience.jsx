@@ -7,19 +7,31 @@ const experiences = [
     logo: "/netskope.png",
     duration: "Oct 2024 - Present",
     location: "Remote",
-    skills: ["React", "JavaScript", "Angular", "Microservices", "REST APIs"],
+    skills: [
+      "React",
+      "JavaScript",
+      "Java",
+      "Angular",
+      "Microservices",
+      "Agentic AI",
+      "SDD",
+      "REST APIs",
+      "Cypress",
+      "Webpack",
+    ],
     points: [
       <>
         <strong>Logs Streaming feature</strong>: Lead the UI development from{" "}
-        <strong>scratch</strong> to forward security and policy enforcement logs
-        from the Netskope Policy Engine → Event Forwarder → Cloud destinations,
-        ensuring reliable, scalable, and real-time log delivery which is used by
-        more than <strong>8 customers</strong> like AirBnB, etc.
+        <strong>scratch</strong> and contributed to backend{" "}
+        <strong>REST APIs</strong> to forward logs from Netskope Engine to
+        user's cloud destinations, ensuring almost real-time log delivery which
+        is used by more than <strong>8 customers</strong> like AirBnB.
       </>,
       <>
         <strong>AI Agents</strong>: Led the migration of old legacy SkopeIT
-        pages into Microfrontend repo (Angular → React) with AI agents and SDD
-        aproach, reducing the migration time from 4 months to 2 months.
+        pages into Microfrontend repo (Angular → React) with AI agents and{" "}
+        <strong>SDD</strong> aproach, reducing the migration time from 4 months
+        to 2 months.
       </>,
       <>
         <strong>Microservice Architecture</strong>: Enhanced the core
@@ -35,7 +47,25 @@ const experiences = [
     logo: "/vmware.png",
     duration: "Apr 2021 - Oct 2024",
     location: "Bengaluru, India",
-    skills: ["React", "Redux", "JavaScript", "Node.js"],
+    skills: [
+      "React",
+      "Redux",
+      "JavaScript",
+      "Jest",
+      "REST APIs",
+      "Enzyme",
+      "RTL",
+    ],
+    achievements: [
+      {
+        title: "At Our Best Award",
+        file: "/documents/atourbest.pdf",
+      },
+      {
+        title: "Hackathon Winner",
+        file: "/documents/hackathon.jpeg",
+      },
+    ],
     points: [
       <>
         <strong>Crown Jewel feature</strong>: Lead the development from scratch
@@ -55,16 +85,6 @@ const experiences = [
         sorting, filtering, data fetching API, etc. Reducing{" "}
         <strong>redundant code by 80%</strong>.
       </>,
-      <>
-        <strong>Migration from Backbonejs to Reactjs</strong>: This led to 40%
-        increase in application metrics, with a <strong>22% bundle size</strong>{" "}
-        reduction and overall <strong>code-coverage of 88%</strong>.
-      </>,
-      <>
-        <strong>Automated Dependency Management</strong>: Upgraded various
-        modules like EsLint, etc. Automated the process by Dependabot, reducing{" "}
-        <strong>80% of manual effort</strong>.
-      </>,
     ],
   },
   {
@@ -73,20 +93,11 @@ const experiences = [
     logo: "/sap.png",
     duration: "Dec 2020 - Mar 2021",
     location: "Bengaluru, India",
-    skills: ["JavaScript", "React", "HTML", "CSS"],
-    achievements: [
-      {
-        title: "At Our Best Award",
-        file: "/documents/vmware-award.pdf",
-      },
-      {
-        title: "Hackathon Winner",
-        file: "/documents/vmware-hackathon.pdf",
-      },
-    ],
+    skills: ["JavaScript", "React", "HTML", "CSS", "UI5", "Agile"],
     points: [
-      "Developed product learning guides under help section for features using SAP UI5.",
+      "Developed frontend features for enterprise applications using SAP UI5.",
       "Improved the Unit tests coverage for the code base from 65% to 78%.",
+      "Collaborated with cross-functional teams to deliver high-quality software solutions",
     ],
   },
 ];
@@ -136,6 +147,24 @@ const Experience = () => {
                   </span>
                 ))}
               </div>
+
+              {exp.achievements && (
+                <div className={styles.achievements}>
+                  <div className={styles.docs}>
+                    {exp.achievements.map((achievement, i) => (
+                      <a
+                        key={i}
+                        href={achievement.file}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className={styles.docBtn}
+                      >
+                        {achievement.title}
+                      </a>
+                    ))}
+                  </div>
+                </div>
+              )}
             </div>
           </div>
         ))}
