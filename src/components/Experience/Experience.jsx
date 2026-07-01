@@ -1,3 +1,4 @@
+import { MdOpenInNew } from "react-icons/md";
 import styles from "./Experience.module.css";
 
 const experiences = [
@@ -160,6 +161,7 @@ const Experience = () => {
                         className={styles.docBtn}
                       >
                         {achievement.title}
+                        <MdOpenInNew className={styles.docBtnIcon} />
                       </a>
                     ))}
                   </div>

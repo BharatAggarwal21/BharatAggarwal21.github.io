@@ -175,18 +175,32 @@
 }
 
 .docBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
   background: #fecd55;
   color: #222;
   text-decoration: none;
   padding: 10px 18px;
   border-radius: 30px;
   font-weight: 600;
-  transition: all 0.3s;
+  cursor: pointer;
+  box-shadow: 0 3px 8px rgba(217, 168, 0, 0.35);
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    background 0.2s ease;
 }
 
 .docBtn:hover {
-  background: #d9a800;
+  background: #fad96c;
   color: #222;
+  text-decoration: none;
+  /* box-shadow: 0 6px 14px rgba(217, 168, 0, 0.45); */
+}
+
+.docBtnIcon {
+  font-size: 16px;
 }
 
 .companyHeader {
