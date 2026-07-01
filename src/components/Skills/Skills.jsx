@@ -12,7 +12,7 @@ const skills = [
   { icon: "node.png", label: "Node.js" },
   { icon: "mongo.png", label: "MongoDB" },
   { icon: "microservices.png", label: "Microservice/Monotlithic" },
-  { icon: "ux.webp", label: "UI/UX" },
+  { icon: "UX.png", label: "UI/UX" },
   { icon: "jest.png", label: "Jest" },
 ];
 
