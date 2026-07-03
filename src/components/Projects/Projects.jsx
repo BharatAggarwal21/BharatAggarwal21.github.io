@@ -9,8 +9,23 @@ export default function Project() {
       <br></br>
       <div className={Styles.container_fluid}>
         <ProjectCard
+          image="todo1.png"
+          title="Task Manager"
+          description="A full-stack to-do app with JWT authentication to organize, track, and complete your daily tasks."
+          techStack={[
+            "React",
+            "Node.js",
+            "Express",
+            "MongoDB",
+            "Tailwind CSS",
+            "JWT",
+          ]}
+          liveLink="https://bharataggarwal21.github.io/ToDoApp/"
+          githubLink="https://github.com/BharatAggarwal21/ToDoApp"
+        />
+        <ProjectCard
           image="admin-dashboard.png"
-          title="E-Commerce Admin Dashboard"
+          title="Seller Admin Dashboard"
           description="Admin-only dashboard for managing products, orders, and customers, with real-time sales analytics."
           techStack={[
             "React",
@@ -26,7 +41,7 @@ export default function Project() {
         <ProjectCard
           image="api-sentinel.png"
           title="API Sentinel"
-          description="A Postman-style API tester and uptime monitor in one place — request builder, saved collections, scheduled health checks, and response analytics."
+          description="An API tester and uptime monitor in one place — request builder, scheduled health checks, and response analytics."
           techStack={[
             "React",
             "Java",
@@ -37,21 +52,6 @@ export default function Project() {
           ]}
           liveLink="https://bharataggarwal21.github.io/API-Monitoring"
           githubLink="https://github.com/BharatAggarwal21/API-Monitoring"
-        />
-        <ProjectCard
-          image="todo1.png"
-          title="Task Manager"
-          description="A full-stack to-do app with JWT authentication to organize, track, and complete your daily tasks."
-          techStack={[
-            "React",
-            "Node.js",
-            "Express",
-            "MongoDB",
-            "Tailwind CSS",
-            "JWT",
-          ]}
-          liveLink="https://bharataggarwal21.github.io/ToDoApp/"
-          githubLink="https://github.com/BharatAggarwal21/ToDoApp"
         />
         <ProjectCard
           image={"covid.png"}
