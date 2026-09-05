@@ -7,98 +7,110 @@ const experiences = [
     role: "Senior Software Engineer",
     logo: "/netskope.png",
     duration: "Oct 2024 - Present",
-    location: "Remote",
+    location: "Bengaluru, India",
     skills: [
-      "React",
+      "React.js",
       "JavaScript",
       "Java",
-      "Angular",
-      "Microservices",
-      "Agentic AI",
-      "SDD",
       "REST APIs",
-      "Cypress",
-      "Webpack",
+      "Node.js",
+      "MariaDB",
+      "MySQL",
+      "Microservices",
+      "Kubernetes",
+      "Kafka",
     ],
     points: [
       <>
-        <strong>Logs Streaming feature</strong>: Led the UI development from{" "}
-        <strong>scratch</strong> and contributed to backend{" "}
-        <strong>REST APIs</strong> to forward logs from Netskope Engine to
-        user's cloud destinations, ensuring almost real-time log delivery which
-        is used by more than <strong>8 customers</strong> like AirBnB.
+        <strong>Events Streaming feature</strong>: Led end-to-end development
+        from scratch, building the UI with React.js and JavaScript, REST APIs
+        for the Java microservice using design patterns, and secure
+        configuration storage with Vault DB. Reduced delivery time from 2 hours
+        to 5 minutes and delivered multiple production deployments used by{" "}
+        <strong>8+ enterprise customers</strong>, including Airbnb.
       </>,
       <>
-        <strong>AI Agents</strong>: Led the migration of old legacy SkopeIT
-        pages into Microfrontend repo (Angular → React) with AI agents and{" "}
-        <strong>SDD</strong> aproach, reducing the migration time from 4 months
-        to 2 months.
+        <strong>Config-driven Architecture</strong>: Architected and implemented
+        a design-pattern-based architecture for the SkopeIT microservice,
+        reducing boilerplate code and accelerating feature development by{" "}
+        <strong>60%</strong>. Mentored two engineers working on the
+        microservice.
       </>,
       <>
-        <strong>Microservice Architecture</strong>: Enhanced the core
-        functionality around <strong>config-driven development</strong> for
-        SkopeIT micro-frontend, reducing the redundant work and speeding up
-        feature delivery.
+        <strong>AI Agents</strong>: Developed and leveraged AI agents with an
+        SDD approach to migrate legacy Angular pages to React microfrontends,
+        legacy PHP code to Java, and Node.js microservices, reducing the
+        migration timeline from <strong>3 months to 2 weeks</strong>.
+      </>,
+      <>
+        Served as the <strong>on-call engineer</strong>, troubleshooting
+        production issues using Sumo Logic, Grafana, and Kubernetes.
       </>,
     ],
   },
   {
     company: "VMware",
-    role: "Member of Technical Staff 2",
+    role: "Software Engineer 2",
     logo: "/vmware.png",
     duration: "Apr 2021 - Oct 2024",
     location: "Bengaluru, India",
-    skills: [
-      "React",
-      "Redux",
-      "JavaScript",
-      "Jest",
-      "REST APIs",
-      "Enzyme",
-      "RTL",
-    ],
+    skills: ["React", "JavaScript", "Java", "REST APIs", "Kubernetes"],
     achievements: [
       {
         title: "At Our Best Award",
         file: "/documents/atourbest.pdf",
       },
       {
-        title: "Hackathon Winner",
+        title: "Hackathon - 3rd Place",
         file: "/documents/hackathon.jpeg",
       },
     ],
     points: [
       <>
-        <strong>Crown Jewel feature</strong>: Lead the development from scratch
-        which brought in <strong>10 customers</strong> like Optum. Got{" "}
-        <strong>promoted</strong> to MTS 2 after this.
+        <strong>Crown Jewel feature</strong>: Led end-to-end development using
+        React.js and responsive topologies on the frontend. Developed a Java
+        traffic-analysis algorithm and REST APIs for critical entities, reducing
+        security attacks on them by <strong>70%</strong>.
       </>,
       <>
-        <strong>Applications Feature</strong>: Amongst top features of the
-        product. Enhanced discovery methods like flow based, revamped Overview
-        and Single App Dashboard which{" "}
-        <strong>increased the customer engagement by 60%</strong> and honoured
-        the feedback based on telemetry data.
+        <strong>Applications feature</strong>: Revamped the Single App Dashboard
+        and developed flow-based application discovery methods, achieving{" "}
+        <strong>95% accuracy</strong> using VMs and Kubernetes services.
       </>,
       <>
-        <strong>Dynamic Table framework</strong>: Developed a wrapper table over
-        the Table component. It has capabilities for internally handling
-        sorting, filtering, data fetching API, etc. Reducing{" "}
-        <strong>redundant code by 80%</strong>.
+        <strong>Dynamic Table Framework</strong>: Designed a reusable framework
+        with built-in sorting, filtering, pagination, and API integration,
+        reducing duplicate code by <strong>80%</strong>.
+      </>,
+      <>
+        Received the <strong>At Our Best Award</strong> and secured{" "}
+        <strong>3rd place in the Hackathon</strong>.
       </>,
     ],
   },
   {
-    company: "SAP Labs",
-    role: "Software Developer",
+    company: "SAP",
+    role: "Software Engineer",
     logo: "/sap.png",
-    duration: "Dec 2020 - Mar 2021",
+    duration: "Jul 2020 - Mar 2021",
     location: "Bengaluru, India",
-    skills: ["JavaScript", "React", "HTML", "CSS", "UI5", "Agile"],
+    skills: ["SAP UI5", "JavaScript", "Unit Testing"],
     points: [
-      "Developed frontend features for enterprise applications using SAP UI5.",
-      "Improved the Unit tests coverage for the code base from 65% to 78%.",
-      "Collaborated with cross-functional teams to deliver high-quality software solutions",
+      "Developed product learning guides under the Help section for features using SAP UI5.",
+      <>
+        Improved unit test coverage for the codebase from{" "}
+        <strong>81% to 89%</strong>.
+      </>,
+    ],
+  },
+  {
+    company: "IIT Bombay",
+    role: "Summer Intern",
+    duration: "May 2019 - Jul 2019",
+    location: "Mumbai, India",
+    skills: ["Web Development", "Online Assessments"],
+    points: [
+      "Developed an online assessment platform with distinct user interfaces tailored to students and professors.",
     ],
   },
 ];
@@ -116,11 +128,13 @@ const Experience = () => {
             <div className={styles.content}>
               <div className={styles.header}>
                 <div className={styles.companyHeader}>
-                  <img
-                    src={exp.logo}
-                    alt={exp.company}
-                    className={styles.companyLogo}
-                  />
+                  {exp.logo && (
+                    <img
+                      src={exp.logo}
+                      alt={exp.company}
+                      className={styles.companyLogo}
+                    />
+                  )}
 
                   <div className={styles.companyHeaderContent}>
                     <h2>{exp.company}</h2>

@@ -1,81 +1,291 @@
-body {
-  font-family:
-    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu,
-    Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+.hero {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  padding: 58px 22px 82px;
+  background: #fffef5;
 }
 
-.profile_container {
-  margin: auto;
-  background-color: #ffc831;
-  padding: 15px;
-  width: fit-content;
-  border-radius: 50%;
-}
-
-.buttonLink {
-  display: inline-block;
-  padding: 10px 20px;
-  border-radius: 6px;
-  background-color: #000000;
-  color: #ffffff;
-  text-decoration: none;
-  font-family: inherit;
-  font-weight: bold;
-  box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.4);
-  transition: all 0.3s ease;
-}
-
-.buttonLink:hover {
-  background-color: #000000;
-  color: #ffffff;
-  box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.8);
-  transform: translateY(-2px);
-  text-decoration: none;
-}
-
-.profile_container > img {
-  border-radius: 50%;
-  width: 220px;
-  height: 210px;
-}
-
-.name {
-  font-size: 33px;
-  font-weight: bolder;
-}
-
-.profession {
-  font-size: 19px;
-  font-weight: bold;
-}
-
-.skills {
-  align-items: center;
-}
-
-.skills img {
-  width: 80px;
-}
-.details {
-  font-size: 20px;
-}
-.decorative_circle {
-  bottom: 0px;
-  right: -20px;
-  /* background-color: rgb(54, 54, 54); */
-  height: 50px;
-  width: 50px;
-  border-radius: 50%;
-}
-a div {
-  /* color: #A8A8A8; */
-  color: white;
-}
-
-.pattern_down {
+.topWave {
   position: absolute;
-  top: 10;
+  z-index: -1;
+  top: 0;
   left: 0;
   width: 100%;
-  z-index: -2;
+  height: 315px;
+  pointer-events: none;
+}
+
+.topWave path {
+  fill: var(--blue-light);
+}
+
+.heroInner {
+  position: relative;
+  z-index: 1;
+  max-width: 920px;
+  margin: 0 auto;
+}
+
+.profileContainer {
+  position: relative;
+  width: 190px;
+  height: 190px;
+  margin: 15px auto 38px;
+  padding: 7px;
+  border: 4px solid var(--blue);
+  border-radius: 50%;
+  background: var(--surface);
+  box-shadow: 0 16px 34px rgba(117, 94, 15, 0.16);
+}
+
+.profileContainer img {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  transition: transform 250ms ease;
+}
+
+.profileContainer:hover img {
+  transform: scale(1.035);
+}
+
+.hero h1 {
+  margin: 0;
+  color: #403d27;
+  font-size: clamp(1.85rem, 3vw, 2.35rem);
+  font-weight: 500;
+  letter-spacing: -0.06em;
+  line-height: 1;
+}
+
+.role {
+  display: inline-flex;
+  margin: 14px 0 0;
+  padding: 7px 18px;
+  border-radius: 999px;
+  background: var(--blue);
+  color: #49452d;
+  font-size: clamp(0.95rem, 1.7vw, 1.15rem);
+  font-weight: 500;
+}
+
+.summary {
+  max-width: 700px;
+  margin: 24px auto 0;
+  color: var(--muted);
+  font-size: 1.04rem;
+  line-height: 1.8;
+}
+
+.actions,
+.socials {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.actions {
+  margin-top: 28px;
+}
+
+.primaryButton,
+.secondaryButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 47px;
+  padding: 0 21px;
+  border-radius: 10px;
+  font-size: 0.92rem;
+  font-weight: 750;
+  text-decoration: none;
+  transition:
+    transform 180ms ease,
+    box-shadow 180ms ease;
+}
+
+.primaryButton {
+  border: 1px solid var(--blue);
+  background: var(--blue);
+  color: var(--accent-text);
+  box-shadow: 0 8px 20px rgba(155, 124, 20, 0.18);
+}
+
+.secondaryButton {
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text);
+}
+
+.primaryButton:hover,
+.secondaryButton:hover {
+  color: var(--text);
+  text-decoration: none;
+  transform: translateY(-2px);
+}
+
+.primaryButton:hover {
+  box-shadow: 0 11px 24px rgba(155, 124, 20, 0.24);
+}
+
+.socials {
+  margin-top: 21px;
+}
+
+.socials a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 40px;
+  padding: 0 14px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--surface);
+  color: var(--text);
+  font-size: 0.83rem;
+  font-weight: 750;
+  text-decoration: none;
+  box-shadow: 0 5px 14px rgba(105, 85, 20, 0.07);
+  transition:
+    transform 180ms ease,
+    background 180ms ease;
+}
+
+.socials a:hover {
+  background: var(--blue-light);
+  color: var(--text);
+  text-decoration: none;
+  transform: translateY(-2px);
+}
+
+.socials img {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+
+.contactCards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  max-width: 850px;
+  margin: 44px auto 0;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  background: var(--surface);
+  box-shadow: 0 14px 34px rgba(105, 85, 20, 0.08);
+}
+
+.contactCards > * {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 0;
+  padding: 21px 15px;
+  color: var(--text);
+  text-decoration: none;
+  transition: background 180ms ease;
+}
+
+.contactCards > * + * {
+  border-left: 1px solid var(--border);
+}
+
+.contactCards > *:hover {
+  background: var(--blue-light);
+  color: var(--text);
+  text-decoration: none;
+}
+
+.contactIcon {
+  display: grid;
+  width: 36px;
+  height: 36px;
+  margin-bottom: 9px;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--blue-light);
+  color: #806400;
+  font-size: 1.15rem;
+}
+
+.contactCards small {
+  color: var(--muted);
+  font-size: 0.66rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.contactCards strong {
+  max-width: 100%;
+  margin-top: 3px;
+  overflow: hidden;
+  font-size: 0.83rem;
+  text-overflow: ellipsis;
+}
+
+.bottomWave {
+  position: absolute;
+  z-index: -1;
+  right: -8%;
+  bottom: -120px;
+  left: -8%;
+  height: 175px;
+  border-radius: 50% 50% 0 0;
+  background: #fff8d6;
+}
+
+@media (max-width: 680px) {
+  .hero {
+    padding: 46px 18px 66px;
+  }
+
+  .topWave {
+    height: 260px;
+  }
+
+  .profileContainer {
+    width: 165px;
+    height: 165px;
+  }
+
+  .hero h1 {
+    font-size: clamp(1.8rem, 8vw, 2.2rem);
+  }
+
+  .summary {
+    font-size: 0.97rem;
+  }
+
+  .actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .contactCards {
+    grid-template-columns: 1fr;
+  }
+
+  .contactCards > * + * {
+    border-top: 1px solid var(--border);
+    border-left: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .primaryButton,
+  .secondaryButton,
+  .socials a,
+  .profileContainer img {
+    transition: none;
+  }
 }

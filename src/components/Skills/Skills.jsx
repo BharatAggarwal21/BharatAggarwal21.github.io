@@ -18,7 +18,7 @@ const skills = [
 
 export default function Skills() {
   return (
-    <div className="my-5 container-fluid">
+    <div className={`${Styles.section} container-fluid`}>
       <div className={`mb-5 ${Styles.heading}`}>Skills</div>
 
       <div className={`row justify-content-center ${Styles.skills}`}>

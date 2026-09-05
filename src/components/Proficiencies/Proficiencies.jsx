@@ -3,7 +3,7 @@ import Styles from "./Proficiencies.module.css";
 
 export default function Proficiencies() {
   return (
-    <div className="my-5 container-fluid">
+    <div className={`${Styles.section} container-fluid`}>
       <div className={`mb-5 ${Styles.heading}`}>Proficiencies</div>
 
       <div className={`row justify-content-center ${Styles.proficiencies}`}>

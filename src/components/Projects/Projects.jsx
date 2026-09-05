@@ -5,23 +5,29 @@ import Styles from "./Projects.module.css";
 export default function Project() {
   return (
     <div className={Styles.main_container}>
-      <h1 className={Styles.heading}>Projects at Glance</h1>
-      <br></br>
+      <div className={Styles.section_header}>
+        <span className={Styles.eyebrow}>Selected work</span>
+        <h1 className={Styles.heading}>Projects at a Glance</h1>
+        <p>
+          Full-stack products and data-driven experiences built from idea to
+          deployment.
+        </p>
+      </div>
       <div className={Styles.container_fluid}>
         <ProjectCard
-          image="todo1.png"
-          title="Task Manager"
-          description="A full-stack to-do app with JWT authentication to organize, track, and complete your daily tasks."
+          image="api-sentinel.png"
+          title="API Sentinel"
+          description="An API tester and uptime monitor in one place — request builder, scheduled health checks, and response analytics."
           techStack={[
             "React",
-            "Node.js",
-            "Express",
+            "Java",
+            "Spring Boot",
             "MongoDB",
             "Tailwind CSS",
             "JWT",
           ]}
-          liveLink="https://bharataggarwal21.github.io/ToDoApp/"
-          githubLink="https://github.com/BharatAggarwal21/ToDoApp"
+          liveLink="https://bharataggarwal21.github.io/API-Monitoring"
+          githubLink="https://github.com/BharatAggarwal21/API-Monitoring"
         />
         <ProjectCard
           image="admin-dashboard.png"
@@ -39,19 +45,34 @@ export default function Project() {
           githubLink="https://github.com/BharatAggarwal21/ecommerce-admin-dashboard"
         />
         <ProjectCard
-          image="api-sentinel.png"
-          title="API Sentinel"
-          description="An API tester and uptime monitor in one place — request builder, scheduled health checks, and response analytics."
+          image="documentquery.png"
+          title="Document Query App"
+          description="A full-stack app for uploading PDFs, extracting structured data, tracking processing, and finding explainable document matches."
           techStack={[
             "React",
-            "Java",
-            "Spring Boot",
+            "TypeScript",
+            "Node.js",
+            "Express",
+            "MongoDB",
+            "Tailwind CSS",
+          ]}
+          liveLink="https://bharataggarwal21.github.io/document-query-app/"
+          githubLink="https://github.com/BharatAggarwal21/document-query-app"
+        />
+        <ProjectCard
+          image="todo1.png"
+          title="Task Manager"
+          description="A full-stack to-do app with JWT authentication to organize, track, and complete your daily tasks."
+          techStack={[
+            "React",
+            "Node.js",
+            "Express",
             "MongoDB",
             "Tailwind CSS",
             "JWT",
           ]}
-          liveLink="https://bharataggarwal21.github.io/API-Monitoring"
-          githubLink="https://github.com/BharatAggarwal21/API-Monitoring"
+          liveLink="https://bharataggarwal21.github.io/ToDoApp/"
+          githubLink="https://github.com/BharatAggarwal21/ToDoApp"
         />
         <ProjectCard
           image={"covid.png"}
@@ -60,14 +81,6 @@ export default function Project() {
           techStack={["React", "Chart.js", "Public API", "HTML", "CSS"]}
           liveLink="https://BharatAggarwal21.github.io/covid-dashboard"
           githubLink="https://github.com/BharatAggarwal21/covid-dashboard"
-        />
-        <ProjectCard
-          image="pix.png"
-          title="Pix & Clips"
-          description="A media discovery platform to browse and explore stock photos and videos from creators worldwide."
-          techStack={["React", "Axios", "Public API", "HTML", "CSS"]}
-          liveLink="https://BharatAggarwal21.github.io/pix-clips"
-          githubLink="https://github.com/BharatAggarwal21/pix-clips"
         />
         <ProjectCard
           image="gdp.jpg"

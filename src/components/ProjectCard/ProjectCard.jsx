@@ -10,12 +10,10 @@ export default function ProjectCard({
   githubLink,
 }) {
   return (
-    <div
-      className={`card col-sm- col-md-9 col-lg-3 m-3 ${Styles.card_container}`}
-    >
+    <div className={["card col-12 col-md-5", Styles.card_container].join(" ")}>
       <img
         src={image}
-        className={`card-img-top ${Styles.card_image}`}
+        className={["card-img-top", Styles.card_image].join(" ")}
         alt={title}
       ></img>
       <div className="card-body d-flex flex-column">
@@ -36,7 +34,7 @@ export default function ProjectCard({
               href={liveLink}
               target="_blank"
               rel="noopener noreferrer"
-              className="btn btn-success btn-block "
+              className={["btn btn-block", Styles.live_button].join(" ")}
             >
               Live
             </a>

@@ -4,6 +4,13 @@
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.4);
 }
 
+@media (min-width: 992px) {
+  .card_container {
+    flex: 0 0 calc((100% - 144px) / 3);
+    max-width: calc((100% - 144px) / 3);
+  }
+}
+
 .card_container:hover {
   transform: translateY(-5px) scale(1.03);
   box-shadow: 15px 15px 25px rgba(0, 0, 0, 0.5);
@@ -36,4 +43,18 @@
   font-weight: 500;
   padding: 4px 10px;
   border-radius: 999px;
+}
+
+.live_button {
+  border-color: var(--blue);
+  background-color: var(--blue);
+  color: var(--accent-text);
+}
+
+.live_button:hover,
+.live_button:focus {
+  border-color: var(--blue);
+  background-color: var(--blue);
+  color: var(--accent-text);
+  filter: brightness(0.96);
 }
