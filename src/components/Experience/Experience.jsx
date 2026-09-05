@@ -106,6 +106,7 @@ const experiences = [
   {
     company: "IIT Bombay",
     role: "Summer Intern",
+    logo: "/iit-bombay.svg",
     duration: "May 2019 - Jul 2019",
     location: "Mumbai, India",
     skills: ["Web Development", "Online Assessments"],
