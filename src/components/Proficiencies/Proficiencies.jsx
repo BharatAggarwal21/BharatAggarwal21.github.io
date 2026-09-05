@@ -8,11 +8,6 @@ export default function Proficiencies() {
 
       <div className={`row justify-content-center ${Styles.proficiencies}`}>
         <div className="col-sm-12 col-md-5 col-lg-2">
-          <img src="react.svg" alt="img"></img>
-          <div>React Apps</div>
-        </div>
-
-        <div className="col-sm-12 col-md-5 col-lg-2">
           <img src="front.svg" alt="img"></img>
           <div>Frontend</div>
         </div>
@@ -24,7 +19,16 @@ export default function Proficiencies() {
 
         <div className="col-sm-12 col-md-5 col-lg-2">
           <img src="database.svg" alt="img"></img>
-          <div>Database (Familiar)</div>
+          <div>Database</div>
+        </div>
+
+        <div className="col-sm-12 col-md-5 col-lg-2">
+          <img
+            src="agentic-ai.webp"
+            alt="AI Agents"
+            className={Styles.aiImage}
+          ></img>
+          <div>AI Agents</div>
         </div>
       </div>
     </div>

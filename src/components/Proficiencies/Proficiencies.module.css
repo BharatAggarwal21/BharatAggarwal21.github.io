@@ -19,6 +19,13 @@
   height: 130px;
   object-fit: contain;
 }
+
+.proficiencies .aiImage {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  object-fit: cover;
+}
 .proficiencies > div {
   max-width: 220px;
   padding: 28px 18px;
